@@ -8,7 +8,7 @@ import 'package:listviewapi/FruitDetail.dart';
 
 Future<List<Post>> fetchPost() async {
   final response =
-  await http.get(Uri.parse('http://techintor.online/flutterjson.json'));
+  await http.get(Uri.parse('http://techintor.online/flutterapi.json'));
 
   if (response.statusCode == 200) {
     final parsed = json.decode(response.body).cast<Map<String, dynamic>>();
